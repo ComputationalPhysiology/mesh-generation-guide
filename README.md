@@ -2,6 +2,8 @@
 
 #### by Alexandra K. Diem [@akdiem](https://github.com/akdiem)
 
+![Segmented and post-processes heart geometry from CT images](figures/heart_segmented.png "Segmented and post-processes heart geometry from CT images")
+
 The scope of this tutorial is to serve as a visual guide for anyone getting into medical image segmentation for the purpose of creating a finite element mesh. It has been developed in the hope to streamline the workflow used to handle medical image data at Simula. It covers image segmentation and mesh optimisation using only software that is freely available and works on any operating system. The software packages used in this tutorial are:
 
 * [ITK-SNAP](http://www.itksnap.org/) for segmentation of medical images
