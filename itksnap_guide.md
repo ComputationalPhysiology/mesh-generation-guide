@@ -30,4 +30,16 @@ The first step in the semi-automatic segmentation process is thresholding. Adjus
 
 ![Pre-segmentation by thresholding](figures/itksnap/0005.png "Pre-segmentation by thresholding")
 
-Ideally, I would have liked to include all blood filled spaces in one go, but the shades of grey are fairly different for the left heart, right heart, and the aorta. So I chose the lower threshold 93.0 and upper threshold 1077.0.
+Ideally, I would have liked to include all blood filled spaces in one go, but the shades of grey are fairly different for the left heart, right heart, and the aorta. So I chose the lower threshold 93.0 and upper threshold 1077.0 and advance to the next step by clicking on "Next".
+
+The second step is to initialise the automatic segmentation by placing a set of "bubbles" in areas that we'd like to segment.
+
+![Placing bubbles](figures/itksnap/0006.png "Placing bubbles")
+
+Bubbles are placed by moving the crosshair cursor to the desired location and clicking on "Add Bubble at Cursor". The size of the bubble can be adjusted using the slider after placing the bubble. You can add as many bubbles as you like. My experience has shown that you get the best results if you place few bubbles that are as large as possible. Here I've placed a bubble in the left ventricle, left atrium, and ascending aorta each. Advance to the next step by clicking on "next".
+
+The final step is the easiest, because you just have to hit the "Play" button, sit back, and wait for the automatic segmentation to do its job. By clicking on "Update" below the bottom left panel we can check the 3D view of the label.
+
+![First look at the 3D segmentation](figures/itksnap/0007.png "First look at the 3D segmentation")
+
+After around 320 iterations we get a fairly complete segmentation of the cavities of the left ventricle and left atrium, as well as the lumina of the ascending aorta and pulmonary veins. Some short sections of the coronary arteries are also visible. Continuing the time evolution of the automatic segmentation extens the segmentation of these arteries and veins further. 
