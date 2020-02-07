@@ -21,3 +21,17 @@ It is easy to see that the segmentation is very "rough", that is, the surface is
 We can do the same with the left atrium since its surface is just a little rugged like the aorta was. Again, I reduced the size of the brush for the pulmonary veins, and also the left atrial appendage.
 
 ![Smooth left atrium after sculpting](figures/meshmixer/0004.png "Smooth left atrium after sculpting")
+
+The left ventricle is a little tricker since there are a lot of large gaps to be filled. To do this we switch to using the "Bubble Smooth" brush on the sculpt tool, leaving all other parameters as they are. Larger gaps require a larger brush size. Mostly this gives satisfactory results, except for a few "button" artifacts that will definitely cause problems in simulations.
+
+!["Button" artifacts in the left ventricle](figures/meshmixer/0005.png "Button" artifacts in the left ventricle")
+
+Such artifacts are easily removed using the "Pinch" brush for the Sculpt tool and one more round with the "Robust Smooth" brush.
+
+![The "Pinch" brush removes "button" artifacts](figures/meshmixer/0006.png "The "Pinch" brush removes "button" artifacts")
+
+Obtaining the final result from the initial surface mesh took no longer than 15 minutes.
+
+![Smooth mesh of the left heart](figures/meshmixer/0007.png "Smooth mesh of the left heart")
+
+Export the surface mesh back to stl for the conversion into a solid part using FreeCAD
