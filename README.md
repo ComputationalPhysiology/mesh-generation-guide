@@ -16,5 +16,5 @@ The scope of this tutorial is to serve as a visual guide for anyone getting into
 
 1. [Semi-automatic image segmentation](itksnap_guide.md)
 2. [Clean-up of surface meshes and optimisation](meshmixer_guide.md)
-3. Conversion of surface meshes to solid parts
+3. [Conversion of surface meshes to solid parts](freecad_guide.md)
 4. Generation of finite element volume meshes
